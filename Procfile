@@ -1,1 +1,1 @@
-web: gunicorn ScheduPulse.wsgi
+web: gunicorn schedupulse.wsgi
