@@ -32,6 +32,9 @@ DEBUG = False
 ALLOWED_HOSTS = ['8000-barry1701-schedupulse-oqx8npmoupu.ws.codeinstitute-ide.net','.herokuapp.com'
 ]
 
+CSRF_TRUSTED_ORIGINS = ["https://*.codeinstitute-ide.net/",
+    "https://*.herokuapp.com"]
+
 
 # Application definition
 
