@@ -35,6 +35,11 @@ ALLOWED_HOSTS = ['8000-barry1701-schedupulse-oqx8npmoupu.ws.codeinstitute-ide.ne
 CSRF_TRUSTED_ORIGINS = ["https://*.codeinstitute-ide.net/",
     "https://*.herokuapp.com"]
 
+# Application definition
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
 
 # Application definition
 
@@ -46,6 +51,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website',
+    'meetings',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -56,6 +63,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'users.middleware.EnsureProfileMiddleware',
+
 ]
 
 ROOT_URLCONF = 'schedupulse.urls'
