@@ -1,0 +1,141 @@
+/* Główne kolory */
+:root {
+    --primary-color: #4e4b6e;
+    --secondary-color: #655c7f;
+    --background-color: #d4ccbb;
+    --light-background-color: #faebd4;
+    --accent-color: #fb583d;
+    --accent-dark-color: #e74327;
+    --text-color: #333;
+    --light-text-color: #666;
+}
+
+/* Stylizacja ciała strony */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Nagłówki i stopki */
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Nawigacja */
+nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: var(--accent-dark-color);
+}
+
+/* Główna zawartość */
+.container {
+    width: 80%;
+    margin: 2em auto;
+    padding: 2em;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+/* Listy */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5em 0;
+}
+
+/* Formularze */
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5em;
+}
+
+form label {
+    text-align: right;
+    padding-right: 1em;
+}
+
+form input, form select, form textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form button {
+    grid-column: 2 / 3;
+    padding: 0.7em;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--accent-dark-color);
+}
+
+/* Tabele */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+.table th, .table td {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.table th {
+    background-color: var(--light-background-color);
+}
+
+/* Alerty */
+.alert {
+    padding: 1em;
+    margin: 1em 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
