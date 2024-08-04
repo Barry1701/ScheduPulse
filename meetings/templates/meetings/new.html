@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 
-{% block title %} New Meeting {{meeting.title}}{% endblock %}
+{% block title %} New Meeting {% endblock %}
 
 {% block content %}
 <h1>Plan A New Meeting</h1>
 <form method="post">
-    <table>
+    <table class="table">
         {{ form }}
     </table>
     {% csrf_token %}

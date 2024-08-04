@@ -46,6 +46,14 @@ nav a:hover {
     background-color: var(--accent-dark-color);
 }
 
+/* Stylizacja przycisku Logout */
+.logout-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
 /* Główna zawartość */
 .container {
     width: 80%;
