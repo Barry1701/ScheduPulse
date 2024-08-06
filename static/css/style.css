@@ -62,6 +62,9 @@ nav a:hover {
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 h1, h2, h3 {
@@ -146,4 +149,23 @@ form button:hover {
     background-color: #f8d7da;
     border-color: #f5c6cb;
     color: #721c24;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    align-self: center; /* Przesunięcie obrazu w prawo */
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    align-self: center; /* Przesunięcie obrazu w prawo */
+    margin-left: 20px;
+    
 }
