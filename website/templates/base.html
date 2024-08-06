@@ -14,6 +14,7 @@
     <nav>
         <a href="{% url 'welcome' %}">Home</a>
         <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'meetings_list' %}">Meetings</a>
         <a href="{% url 'rooms' %}">Rooms List</a>
         {% if user.is_authenticated %}
             <a href="{% url 'new' %}">Add New Meeting</a>

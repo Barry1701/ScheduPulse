@@ -5,14 +5,4 @@
 <h1>Welcome to ScheduPulse!</h1>
 <h3>Navigate Your Day , Unleash Your Productivity Potential.</h3>
 <img src="{% static 'images/Meeting_Organizer.png' %}" class="calendar-image" alt="Calendar">
-<h2>Meetings</h2>
-<ul>
-    {% for meeting in meetings %}
-    <li>
-        <a href="{% url 'detail' meeting.id %}">
-            {{ meeting.title }} (Organized by: {{ meeting.created_by.username }})
-        </a>
-    </li>
-    {% endfor %}
-</ul>
 {% endblock %}

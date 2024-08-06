@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Meetings{% endblock %}
+
+{% block content %}
+<h1>Meetings</h1>
+<ul>
+    {% for meeting in meetings %}
+    <li>
+        <a href="{% url 'detail' meeting.id %}">
+            {{ meeting.title }} (Organized by: {{ meeting.created_by.username }})
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

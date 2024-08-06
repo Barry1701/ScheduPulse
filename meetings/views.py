@@ -11,6 +11,10 @@ def detail(request, id):
 def rooms_list(request):
     return render(request, "meetings/rooms_list.html", {"rooms": Room.objects.all()})
 
+def meetings_list(request):
+    meetings = Meeting.objects.all()
+    return render(request, "meetings/meetings.html", {"meetings": meetings})
+
 @login_required
 def new(request):
     if request.method == "POST":

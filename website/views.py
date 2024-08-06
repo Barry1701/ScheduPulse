@@ -9,7 +9,7 @@ from django.contrib import messages
 
 
 def welcome(request):
-    return render(request, "website/welcome.html", {"meetings": Meeting.objects.all()})
+    return render(request, "website/welcome.html")
 
 def about(request):
     return render(request, 'website/about.html')
