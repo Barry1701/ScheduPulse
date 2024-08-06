@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from .forms import UserUpdateForm, ProfileUpdateForm
 from meetings.models import Meeting
+from django.contrib import messages
 
 @login_required
 def profile(request):
@@ -11,6 +12,8 @@ def profile(request):
         if user_form.is_valid() and profile_form.is_valid():
             user_form.save()
             profile_form.save()
+            messages.success(request, 'Your profile was successfully updated!')
+
             return redirect('profile')
     else:
         user_form = UserUpdateForm(instance=request.user)
