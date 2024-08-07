@@ -59,7 +59,7 @@ nav a:hover {
 .logout-button {
     background: none;
     border: none;
-    color: white;
+    color: #FFFFF0;
     cursor: pointer;
     font-weight: 700; /* Pogrubienie czcionki */
 }
@@ -111,8 +111,12 @@ ul li {
 .form-container {
     display: flex;
     flex-direction: column;
-    gap: 1em; /* Odstęp między polami formularza */
-    margin-bottom: 1em; /* Odstęp między formularzem a przyciskiem */
+    gap: 2em; /* Większy odstęp między polami formularza */
+    margin-bottom: 2em; /* Większy odstęp między formularzem a przyciskiem */
+}
+
+.form-section {
+    margin-bottom: 2em; /* Większy odstęp między sekcjami formularza */
 }
 
 .form-container label {
@@ -165,21 +169,8 @@ ul li {
     background-color: var(--primary-color);
 }
 
-/* Tabele */
-.table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1em;
-}
-
-.table th, .table td {
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    text-align: left;
-}
-
-.table th {
-    background-color: var(--light-background-color);
+.profile-form-section {
+    margin-bottom: 2em; /* Większy odstęp między sekcjami formularza */
 }
 
 /* Alerty */
@@ -188,6 +179,9 @@ ul li {
     margin: 1em 0;
     border: 1px solid #ccc;
     border-radius: 4px;
+    position: relative;
+    top: 0;
+    z-index: 1000; /* Zapewnia, że alert będzie wyświetlany na górze */
 }
 
 .alert-success {
