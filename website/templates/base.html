@@ -16,7 +16,6 @@
     </header>
     <nav>
         <a href="{% url 'welcome' %}">Home</a>
-        <a href="{% url 'about' %}">About</a>
         <a href="{% url 'meetings_list' %}">Meetings</a>
         <a href="{% url 'rooms' %}">Rooms List</a>
         {% if user.is_authenticated %}
@@ -30,6 +29,7 @@
             <a href="{% url 'login' %}">Login</a>
             <a href="{% url 'register' %}">Register</a>
         {% endif %}
+        <a href="{% url 'about' %}" class="nav-right">About</a>
     </nav>
     <div class="container">
         {% if messages %}

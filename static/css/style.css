@@ -33,8 +33,10 @@ header, footer {
 nav {
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    justify-content: flex-start; /* Wyrównanie linków do lewej */
     background-color: var(--secondary-color);
+    align-items: center;
 }
 
 nav a {
@@ -47,6 +49,13 @@ nav a {
 nav a:hover {
     background-color: var(--accent-dark-color);
 }
+
+
+
+.nav-right {
+    margin-left: auto; /* Przesunięcie linku "About" do prawej strony */
+}
+
 
 /* Stylizacja przycisku Logout */
 .logout-button {
