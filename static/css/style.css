@@ -44,19 +44,16 @@ nav a {
     text-decoration: none;
     padding: 0.5em 1em;
     display: inline-block;
-    font-weight: 700;
+    font-weight: 700; /* Pogrubienie czcionki */
 }
 
 nav a:hover {
     background-color: var(--accent-dark-color);
 }
 
-
-
 .nav-right {
     margin-left: auto; /* Przesunięcie linku "About" do prawej strony */
 }
-
 
 /* Stylizacja przycisku Logout */
 .logout-button {
@@ -64,14 +61,14 @@ nav a:hover {
     border: none;
     color: white;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 700; /* Pogrubienie czcionki */
 }
 
 .container {
     width: 80%;
     margin: 2em auto;
     padding: 2em;
-    background: #E6E6FA
+    background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     display: flex;
@@ -163,7 +160,7 @@ form button:hover {
 /* Alerty */
 .alert {
     padding: 1em;
-    
+    margin: 1em 0;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -189,7 +186,6 @@ form button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .schedu-image {
     flex: 1; /* Pozwolenie, aby obraz zajmował jedną część dostępnej przestrzeni */
     max-width: 500px;
@@ -208,6 +204,7 @@ form button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Responsywność */
 @media (max-width: 1024px) {
     nav {
         flex-direction: column; /* Nawigacja w kolumnie dla mniejszych ekranów */
@@ -236,7 +233,7 @@ form button:hover {
 
     .calendar-image {
         max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
-        margin-top: 20px; /* Dodanie marginesu górnego między zawartością a obrazem */
+        margin-top: 10px; /* Dodanie marginesu górnego między zawartością a obrazem */
     }
 }
 
@@ -263,7 +260,7 @@ form button:hover {
 
     .calendar-image {
         max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
-        margin-top: 20px; /* Dodanie marginesu górnego między zawartością a obrazem */
+        margin-top: 10px; /* Dodanie marginesu górnego między zawartością a obrazem */
     }
 }
 
@@ -302,6 +299,6 @@ form button:hover {
 
     .calendar-image {
         max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
-        margin-top: 20px; /* Dodanie marginesu górnego między zawartością a obrazem */
+        margin-top: 10px; /* Dodanie marginesu górnego między zawartością a obrazem */
     }
 }
