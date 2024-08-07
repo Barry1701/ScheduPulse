@@ -46,7 +46,14 @@ nav a:hover {
     background-color: var(--accent-dark-color);
 }
 
-/* Główna zawartość */
+/* Stylizacja przycisku Logout */
+.logout-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
 .container {
     width: 80%;
     margin: 2em auto;
@@ -54,6 +61,15 @@ nav a:hover {
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    display: flex;
+    flex-direction: row; /* Ustawienie elementów w wierszu */
+    align-items: flex-start;
+    justify-content: space-between; /* Zapewnienie odstępu między elementami */
+}
+
+.content {
+    flex: 1; /* Pozwolenie, aby zawartość zajęła dostępne miejsce */
+    margin-right: 20px; /* Dodanie marginesu między zawartością a obrazem */
 }
 
 h1, h2, h3 {
@@ -138,4 +154,65 @@ form button:hover {
     background-color: #f8d7da;
     border-color: #f5c6cb;
     color: #721c24;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    align-self: center; /* Przesunięcie obrazu w prawo */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.schedu-image {
+    flex: 1; /* Pozwolenie, aby obraz zajmował jedną część dostępnej przestrzeni */
+    max-width: 500px;
+    height: auto;
+    align-self: flex-end;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column; /* Ustawienie elementów w kolumnie dla małych ekranów */
+        align-items: center; /* Wyśrodkowanie elementów */
+    }
+
+    .content {
+        margin-right: 0; /* Usunięcie marginesu dla małych ekranów */
+    }
+
+    .schedu-image {
+        max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
+        margin-top: 20px; /* Dodanie marginesu górnego między zawartością a obrazem */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Ustawienie elementów w kolumnie dla małych ekranów */
+        align-items: center; /* Wyśrodkowanie elementów */
+    }
+
+    .content {
+        margin-right: 0; /* Usunięcie marginesu dla małych ekranów */
+    }
+
+    .schedu-image {
+        max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
+        margin-top: 20px; /* Dodanie marginesu górnego między zawartością a obrazem */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1em; /* Zmniejszenie paddingu dla bardzo małych ekranów */
+    }
+
+    .schedu-image {
+        margin-top: 10px; /* Zmniejszenie marginesu górnego dla bardzo małych ekranów */
+    }
 }
