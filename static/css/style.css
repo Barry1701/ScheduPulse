@@ -59,7 +59,7 @@ nav a:hover {
 .logout-button {
     background: none;
     border: none;
-    color: #FFFFF0;
+    color: white;
     cursor: pointer;
     font-weight: 700; /* Pogrubienie czcionki */
 }
@@ -68,7 +68,7 @@ nav a:hover {
     width: 80%;
     margin: 2em auto;
     padding: 2em;
-    background: #E6E6FA;
+    background: #FFFFF0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     display: flex;
@@ -167,6 +167,42 @@ ul li {
 
 .btn-cancel:hover {
     background-color: var(--primary-color);
+}
+
+/* Stylizacja linków edycji i usuwania */
+.btn-edit, .btn-delete {
+    padding: 0.5em 1em;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700; /* Pogrubienie tekstu przycisku */
+    text-align: center;
+    text-decoration: none; /* Usunięcie podkreślenia linków */
+    margin-right: 0.5em; /* Odstęp między przyciskami */
+}
+
+.btn-edit {
+    background-color: var(--accent-color);
+}
+
+.btn-edit:hover {
+    background-color: var(--accent-dark-color);
+}
+
+.btn-delete {
+    background-color: var(--secondary-color);
+}
+
+.btn-delete:hover {
+    background-color: var(--primary-color);
+}
+
+/* Stylizacja kontenera przycisków */
+.meeting-actions {
+    display: inline-flex; /* Wyświetlanie przycisków obok siebie */
+    gap: 0.5em; /* Odstęp między przyciskami */
+    margin-left: 1em; /* Odstęp między tekstem a przyciskami */
 }
 
 .profile-form-section {
