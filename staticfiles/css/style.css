@@ -183,11 +183,12 @@ ul li {
 }
 
 .btn-edit {
-    background-color: var(--accent-color);
+    background-color: var(--background-color); /* Kolor d4ccbb */
+    color: var(--text-color); /* Dodanie koloru tekstu, aby był widoczny na tle */
 }
 
 .btn-edit:hover {
-    background-color: var(--accent-dark-color);
+    background-color: var(--light-background-color); /* Lekko jaśniejszy kolor na hover */
 }
 
 .btn-delete {
