@@ -1,14 +1,12 @@
 {% extends 'base.html' %}
 
-{% block title %} New Meeting {% endblock %}
+{% block title %}New Meeting{% endblock %}
 
 {% block content %}
 <h1>Plan A New Meeting</h1>
-<form method="post">
-    <table class="table">
-        {{ form }}
-    </table>
+<form method="post" class="form-container">
     {% csrf_token %}
-    <button type="submit">Submit</button>
+    {{ form.as_p }}
+    <button type="submit" class="btn-submit">Submit</button>
 </form>
 {% endblock %}

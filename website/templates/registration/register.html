@@ -4,7 +4,7 @@
 
 {% block content %}
 <h2>Register</h2>
-<form method="post">
+<form method="post" class="form-container">
     {% csrf_token %}
     {{ form.as_p }}
     {% if form.errors %}
@@ -21,6 +21,6 @@
         </ul>
     </div>
     {% endif %}
-    <button type="submit">Register</button>
+    <button type="submit" class="btn-submit">Register</button>
 </form>
 {% endblock %}

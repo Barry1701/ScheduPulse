@@ -5,9 +5,9 @@
 {% block content %}
 <h1>Delete Meeting</h1>
 <p>Are you sure you want to delete the meeting "{{ meeting.title }}"?</p>
-<form method="post">
+<form method="post" class="form-container">
     {% csrf_token %}
-    <button type="submit">Yes, delete</button>
-    <a href="{% url 'profile' %}">Cancel</a>
+    <button type="submit" class="btn-submit">Yes, delete</button>
+    <a href="{% url 'profile' %}" class="btn-cancel">Cancel</a>
 </form>
 {% endblock %}

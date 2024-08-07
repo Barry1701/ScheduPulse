@@ -68,7 +68,7 @@ nav a:hover {
     width: 80%;
     margin: 2em auto;
     padding: 2em;
-    background: white;
+    background: #E6E6FA;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     display: flex;
@@ -107,37 +107,62 @@ ul li {
     padding: 0.5em 0;
 }
 
-/* Formularze */
-form {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 0.5em;
+/* Stylizacja formularzy */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; /* Odstęp między polami formularza */
+    margin-bottom: 1em; /* Odstęp między formularzem a przyciskiem */
 }
 
-form label {
-    text-align: right;
-    padding-right: 1em;
+.form-container label {
+    font-weight: 700; /* Pogrubienie etykiet */
 }
 
-form input, form select, form textarea {
+.form-container input, 
+.form-container select, 
+.form-container textarea {
     padding: 0.5em;
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
+    box-sizing: border-box; /* Zapewnia, że padding jest uwzględniany w szerokości i wysokości */
 }
 
-form button {
-    grid-column: 2 / 3;
-    padding: 0.7em;
+.btn-submit {
+    padding: 0.7em 1.5em;
     background-color: var(--accent-color);
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Wyśrodkowanie przycisku */
+    font-weight: 700; /* Pogrubienie tekstu przycisku */
+    width: fit-content; /* Dopasowanie szerokości przycisku do zawartości */
 }
 
-form button:hover {
+.btn-submit:hover {
     background-color: var(--accent-dark-color);
+}
+
+.btn-cancel {
+    padding: 0.7em 1.5em;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 auto; /* Wyśrodkowanie przycisku */
+    font-weight: 700; /* Pogrubienie tekstu przycisku */
+    text-align: center;
+    width: fit-content; /* Dopasowanie szerokości przycisku do zawartości */
+    text-decoration: none;
+}
+
+.btn-cancel:hover {
+    background-color: var(--primary-color);
 }
 
 /* Tabele */
