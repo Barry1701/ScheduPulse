@@ -4,15 +4,19 @@
 {% block title %}Meetings{% endblock %}
 
 {% block content %}
-<h1>Meetings</h1>
-<img src="{% static 'images/ScheduPulse.png' %}" alt="ScheduPulse Logo" class="image-meetings">
-<ul>
-    {% for meeting in meetings %}
-    <li>
-        <a href="{% url 'detail' meeting.id %}">
-            {{ meeting.title }} (Organized by: {{ meeting.created_by.username }})
-        </a>
-    </li>
-    {% endfor %}
-</ul>
+<div class="container">
+    <div class="content">
+    <h1>Meetings</h1>
+    <ul>
+        {% for meeting in meetings %}
+        <li>
+            <a href="{% url 'detail' meeting.id %}">
+                {{ meeting.title }} (Organized by: {{ meeting.created_by.username }})
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    </div>
+<img src="{% static 'images/ScheduPulse.png' %}" alt="ScheduPulse Logo" class="schedu-image">
+</div>
 {% endblock %}

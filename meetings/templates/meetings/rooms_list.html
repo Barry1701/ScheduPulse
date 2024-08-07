@@ -4,13 +4,17 @@
 {% block title %}Rooms List{% endblock %}
 
 {% block content %}
-<h2>Rooms</h2>
-<img src="{% static 'images/ScheduPulse.png' %}" alt="ScheduPulse Logo" class="image-rooms">
-<ul>
-    {% for room in rooms %}
-    <li>
-        {{ room.name }}: Room {{ room.room_number }} on floor {{ room.floor }} (Capacity: {{ room.capacity }})
-    </li>
-    {% endfor %}
-</ul>
+<div class="container">
+    <div class="content">
+        <h2>Rooms</h2>
+        <ul>
+            {% for room in rooms %}
+            <li>
+                {{ room.name }}: Room {{ room.room_number }} on floor {{ room.floor }} 
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+<img src="{% static 'images/ScheduPulse.png' %}" alt="ScheduPulse Logo" class="schedu-image">
+</div>
 {% endblock %}
