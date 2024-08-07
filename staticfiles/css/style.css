@@ -64,13 +64,14 @@ nav a:hover {
     border: none;
     color: white;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .container {
     width: 80%;
     margin: 2em auto;
     padding: 2em;
-    background: #FFF0F5;
+    background: #E6E6FA
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     display: flex;
@@ -88,6 +89,16 @@ h1, h2, h3 {
     color: var(--primary-color);
 }
 
+/* Stylizacja linków w sekcji meetings */
+.meetings-list a {
+    color: black; /* Zmiana koloru linków na czarny */
+    text-decoration: none; /* Usunięcie podkreślenia linków */
+}
+
+.meetings-list a:hover {
+    text-decoration: underline; /* Dodanie podkreślenia przy najechaniu */
+    color: var(--accent-dark-color); /* Zmiana koloru przy najechaniu */
+}
 
 /* Listy */
 ul {
@@ -152,7 +163,7 @@ form button:hover {
 /* Alerty */
 .alert {
     padding: 1em;
-    margin: 1em 0;
+    
     border: 1px solid #ccc;
     border-radius: 4px;
 }
