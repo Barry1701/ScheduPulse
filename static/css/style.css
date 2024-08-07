@@ -69,7 +69,7 @@ nav a:hover {
     width: 80%;
     margin: 2em auto;
     padding: 2em;
-    background: white;
+    background: #FFEFD5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     display: flex;
@@ -187,6 +187,15 @@ form button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.calendar-image {
+    flex: 1; /* Pozwolenie, aby obraz zajmował jedną część dostępnej przestrzeni */
+    max-width: 500px;
+    height: auto;
+    align-self: flex-end;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 1024px) {
     nav {
         flex-direction: column; /* Nawigacja w kolumnie dla mniejszych ekranów */
@@ -212,6 +221,11 @@ form button:hover {
         max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
         margin-top: 20px; /* Dodanie marginesu górnego między zawartością a obrazem */
     }
+
+    .calendar-image {
+        max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
+        margin-top: 20px; /* Dodanie marginesu górnego między zawartością a obrazem */
+    }
 }
 
 @media (max-width: 768px) {
@@ -231,6 +245,11 @@ form button:hover {
     }
 
     .schedu-image {
+        max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
+        margin-top: 20px; /* Dodanie marginesu górnego między zawartością a obrazem */
+    }
+
+    .calendar-image {
         max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
         margin-top: 20px; /* Dodanie marginesu górnego między zawartością a obrazem */
     }
@@ -267,5 +286,10 @@ form button:hover {
     .schedu-image {
         max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
         margin-top: 10px; /* Dodanie marginesu górnego między zawartością a obrazem */
+    }
+
+    .calendar-image {
+        max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
+        margin-top: 20px; /* Dodanie marginesu górnego między zawartością a obrazem */
     }
 }
