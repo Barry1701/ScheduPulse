@@ -44,6 +44,7 @@ nav a {
     text-decoration: none;
     padding: 0.5em 1em;
     display: inline-block;
+    font-weight: 700;
 }
 
 nav a:hover {
@@ -69,7 +70,7 @@ nav a:hover {
     width: 80%;
     margin: 2em auto;
     padding: 2em;
-    background: #FFEFD5;
+    background: #FFF0F5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     display: flex;
