@@ -130,7 +130,7 @@ h1, h2, h3 {
 ul {
     list-style: none;
     padding: 0;
-    margin-right:25px
+    margin-right:25px;
 }
 
 ul li {
