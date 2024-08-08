@@ -276,7 +276,7 @@ ul li {
     flex: 1; /* Pozwolenie, aby obraz zajmował jedną część dostępnej przestrzeni */
     max-width: 500px;
     height: auto;
-    align-self: flex-end;
+    align-self: flex-start;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
