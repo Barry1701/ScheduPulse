@@ -91,6 +91,7 @@ h1, h2, h3 {
 .list-container {
     width: 100%;
     margin-bottom: 2em;
+    margin-right: 2em;
 }
 
 .list-container h2 {
@@ -130,7 +131,6 @@ h1, h2, h3 {
 ul {
     list-style: none;
     padding: 0;
-    margin-right:25px;
 }
 
 ul li {
@@ -236,6 +236,7 @@ ul li {
     display: inline-flex; /* Wyświetlanie przycisków obok siebie */
     gap: 0.5em; /* Odstęp między przyciskami */
     margin-left: 1em; /* Odstęp między tekstem a przyciskami */
+    margin-top:17px;
 }
 
 .profile-form-section {
@@ -245,7 +246,7 @@ ul li {
 /* Alerty */
 .alert {
     padding: 1em;
-    margin: 1em ;
+    margin: 25px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
