@@ -45,6 +45,7 @@ nav a {
     padding: 0.5em 1em;
     display: inline-block;
     font-weight: 700; /* Pogrubienie czcionki */
+    letter-spacing: 1px;
 }
 
 nav a:hover {
@@ -86,15 +87,43 @@ h1, h2, h3 {
     color: var(--primary-color);
 }
 
-/* Stylizacja linków w sekcji meetings */
-.meetings-list a {
-    color: black; /* Zmiana koloru linków na czarny */
-    text-decoration: none; /* Usunięcie podkreślenia linków */
+/* Stylizacja list spotkań i pokoi */
+.list-container {
+    width: 100%;
+    margin-bottom: 2em;
 }
 
-.meetings-list a:hover {
-    text-decoration: underline; /* Dodanie podkreślenia przy najechaniu */
-    color: var(--accent-dark-color); /* Zmiana koloru przy najechaniu */
+.list-container h2 {
+    margin-bottom: 1em;
+    color: var(--primary-color);
+}
+
+.list-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-container li {
+    padding: 1em;
+    background: var(--light-background-color);
+    margin-bottom: 0.5em;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-container li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.list-container li a:hover {
+    text-decoration: underline;
+    color: var(--accent-dark-color);
 }
 
 /* Listy */
@@ -113,6 +142,8 @@ ul li {
     flex-direction: column;
     gap: 2em; /* Większy odstęp między polami formularza */
     margin-bottom: 2em; /* Większy odstęp między formularzem a przyciskiem */
+    margin-left: 1em;
+    width: 60%;
 }
 
 .form-section {
@@ -213,12 +244,9 @@ ul li {
 /* Alerty */
 .alert {
     padding: 1em;
-    margin: 1em 0;
+    margin: 1em ;
     border: 1px solid #ccc;
     border-radius: 4px;
-    position: relative;
-    top: 0;
-    z-index: 1000; /* Zapewnia, że alert będzie wyświetlany na górze */
 }
 
 .alert-success {

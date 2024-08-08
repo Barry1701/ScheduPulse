@@ -5,16 +5,19 @@
 
 {% block content %}
 <div class="container">
-    <div class="content">
+    <div class="list-container">
         <h2>Rooms</h2>
         <ul>
             {% for room in rooms %}
             <li>
-                {{ room.name }}: Room {{ room.room_number }} on floor {{ room.floor }} 
+                <span>{{ room.name }}: Room {{ room.room_number }} on floor {{ room.floor }} (Capacity: {{ room.capacity }})</span>
+                <div class="room-actions">
+                    <!-- Tu możesz dodać przyciski akcji, jeśli są potrzebne -->
+                </div>
             </li>
             {% endfor %}
         </ul>
     </div>
-<img src="{% static 'images/ScheduPulse.png' %}" alt="ScheduPulse Logo" class="schedu-image">
+    <img src="{% static 'images/ScheduPulse.png' %}" alt="ScheduPulse Logo" class="schedu-image">
 </div>
 {% endblock %}
