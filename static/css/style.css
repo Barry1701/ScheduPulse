@@ -1,5 +1,5 @@
-/* Główne kolory */
 :root {
+    /* Main color variables */
     --primary-color: #4e4b6e;
     --secondary-color: #655c7f;
     --background-color: #d4ccbb;
@@ -10,7 +10,6 @@
     --light-text-color: #666;
 }
 
-/* Stylizacja ciała strony */
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -21,7 +20,6 @@ body {
     padding: 0;
 }
 
-/* Nagłówki i stopki */
 header, footer {
     background-color: var(--primary-color);
     color: white;
@@ -29,12 +27,11 @@ header, footer {
     text-align: center;
 }
 
-/* Nawigacja */
 nav {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-start; /* Wyrównanie linków do lewej */
+    justify-content: flex-start; /* Align links to the left */
     background-color: var(--secondary-color);
     align-items: center;
 }
@@ -44,7 +41,7 @@ nav a {
     text-decoration: none;
     padding: 0.5em 1em;
     display: inline-block;
-    font-weight: 700; /* Pogrubienie czcionki */
+    font-weight: 700; /* Bold text */
     letter-spacing: 1px;
 }
 
@@ -53,16 +50,15 @@ nav a:hover {
 }
 
 .nav-right {
-    margin-left: auto; /* Przesunięcie linku "About" do prawej strony */
+    margin-left: auto; /* Align "About" link to the right */
 }
 
-/* Stylizacja przycisku Logout */
 .logout-button {
     background: none;
     border: none;
     color: white;
     cursor: pointer;
-    font-weight: 700; /* Pogrubienie czcionki */
+    font-weight: 700; /* Bold text */
 }
 
 .container {
@@ -73,21 +69,20 @@ nav a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     display: flex;
-    flex-direction: row; /* Ustawienie elementów w wierszu */
+    flex-direction: row; /* Arrange items in a row */
     align-items: flex-start;
-    justify-content: space-between; /* Zapewnienie odstępu między elementami */
+    justify-content: space-between; /* Space between items */
 }
 
 .content {
-    flex: 1; /* Pozwolenie, aby zawartość zajęła dostępne miejsce */
-    margin-right: 20px; /* Dodanie marginesu między zawartością a obrazem */
+    flex: 1; /* Allow content to take available space */
+    margin-right: 20px; /* Space between content and image */
 }
 
 h1, h2, h3 {
     color: var(--primary-color);
 }
 
-/* Stylizacja list spotkań i pokoi */
 .list-container {
     width: 100%;
     margin-bottom: 2em;
@@ -119,7 +114,7 @@ h1, h2, h3 {
 .list-container li a {
     color: var(--text-color);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 700; /* Bold text */
 }
 
 .list-container li a:hover {
@@ -127,7 +122,6 @@ h1, h2, h3 {
     color: var(--accent-dark-color);
 }
 
-/* Listy */
 ul {
     list-style: none;
     padding: 0;
@@ -137,22 +131,21 @@ ul li {
     padding: 0.5em 0;
 }
 
-/* Stylizacja formularzy */
 .form-container {
     display: flex;
     flex-direction: column;
-    gap: 2em; /* Większy odstęp między polami formularza */
-    margin-bottom: 2em; /* Większy odstęp między formularzem a przyciskiem */
+    gap: 2em; /* Increase space between form fields */
+    margin-bottom: 2em; /* Increase space between form and button */
     margin-left: 1em;
     width: 50%;
 }
 
 .form-section {
-    margin-bottom: 2em; /* Większy odstęp między sekcjami formularza */
+    margin-bottom: 2em; /* Increase space between form sections */
 }
 
 .form-container label {
-    font-weight: 700; /* Pogrubienie etykiet */
+    font-weight: 700; /* Bold labels */
 }
 
 .form-container input, 
@@ -162,7 +155,7 @@ ul li {
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
-    box-sizing: border-box; /* Zapewnia, że padding jest uwzględniany w szerokości i wysokości */
+    box-sizing: border-box; /* Include padding in width and height */
 }
 
 .btn-submit {
@@ -173,9 +166,9 @@ ul li {
     border-radius: 4px;
     cursor: pointer;
     display: block;
-    margin: 0 auto; /* Wyśrodkowanie przycisku */
-    font-weight: 700; /* Pogrubienie tekstu przycisku */
-    width: fit-content; /* Dopasowanie szerokości przycisku do zawartości */
+    margin: 0 auto; /* Center the button */
+    font-weight: 700; /* Bold button text */
+    width: fit-content; /* Fit button width to content */
 }
 
 .btn-submit:hover {
@@ -190,10 +183,10 @@ ul li {
     border-radius: 4px;
     cursor: pointer;
     display: inline-block;
-    margin: 0 auto; /* Wyśrodkowanie przycisku */
-    font-weight: 700; /* Pogrubienie tekstu przycisku */
+    margin: 0 auto; /* Center the button */
+    font-weight: 700; /* Bold button text */
     text-align: center;
-    width: fit-content; /* Dopasowanie szerokości przycisku do zawartości */
+    width: fit-content; /* Fit button width to content */
     text-decoration: none;
 }
 
@@ -201,26 +194,25 @@ ul li {
     background-color: var(--primary-color);
 }
 
-/* Stylizacja linków edycji i usuwania */
 .btn-edit, .btn-delete {
     padding: 0.5em 1em;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-weight: 700; /* Pogrubienie tekstu przycisku */
+    font-weight: 700; /* Bold button text */
     text-align: center;
-    text-decoration: none; /* Usunięcie podkreślenia linków */
-    margin-right: 0.5em; /* Odstęp między przyciskami */
+    text-decoration: none; /* Remove link underline */
+    margin-right: 0.5em; /* Space between buttons */
 }
 
 .btn-edit {
-    background-color: var(--background-color); /* Kolor d4ccbb */
-    color: var(--text-color); /* Dodanie koloru tekstu, aby był widoczny na tle */
+    background-color: var(--background-color); /* Set background color */
+    color: var(--text-color); /* Set text color */
 }
 
 .btn-edit:hover {
-    background-color: var(--light-background-color); /* Lekko jaśniejszy kolor na hover */
+    background-color: var(--light-background-color); /* Lighter color on hover */
 }
 
 .btn-delete {
@@ -231,19 +223,17 @@ ul li {
     background-color: var(--primary-color);
 }
 
-/* Stylizacja kontenera przycisków */
 .meeting-actions {
-    display: inline-flex; /* Wyświetlanie przycisków obok siebie */
-    gap: 0.5em; /* Odstęp między przyciskami */
-    margin-left: 1em; /* Odstęp między tekstem a przyciskami */
-    margin-top:17px;
+    display: inline-flex; /* Display buttons side by side */
+    gap: 0.5em; /* Space between buttons */
+    margin-left: 1em; /* Space between text and buttons */
+    margin-top: 17px;
 }
 
 .profile-form-section {
-    margin-bottom: 2em; /* Większy odstęp między sekcjami formularza */
+    margin-bottom: 2em; /* Increase space between profile sections */
 }
 
-/* Alerty */
 .alert {
     padding: 1em;
     margin: 25px;
@@ -267,13 +257,13 @@ ul li {
     width: 100%;
     max-width: 300px;
     height: auto;
-    align-self: center; /* Przesunięcie obrazu w prawo */
+    align-self: center; /* Align image to the center */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .schedu-image {
-    flex: 1; /* Pozwolenie, aby obraz zajmował jedną część dostępnej przestrzeni */
+    flex: 1; /* Allow image to take available space */
     max-width: 500px;
     height: auto;
     align-self: flex-start;
@@ -282,7 +272,7 @@ ul li {
 }
 
 .calendar-image {
-    flex: 1; /* Pozwolenie, aby obraz zajmował jedną część dostępnej przestrzeni */
+    flex: 1; /* Allow image to take available space */
     max-width: 500px;
     height: auto;
     align-self: flex-end;
@@ -290,11 +280,11 @@ ul li {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsywność */
+/* Responsiveness */
 @media (max-width: 1024px) {
     nav {
-        flex-direction: column; /* Nawigacja w kolumnie dla mniejszych ekranów */
-        align-items: flex-start; /* Wyrównanie elementów do lewej */
+        flex-direction: column; /* Navigation in a column for smaller screens */
+        align-items: flex-start; /* Align items to the left */
     }
 
     .nav-right {
@@ -304,22 +294,22 @@ ul li {
     }
 
     .container {
-        flex-direction: column; /* Ustawienie elementów w kolumnie dla małych ekranów */
-        align-items: center; /* Wyśrodkowanie elementów */
+        flex-direction: column; /* Arrange items in a column for small screens */
+        align-items: center; /* Center items */
     }
 
     .content {
-        margin-right: 0; /* Usunięcie marginesu dla małych ekranów */
+        margin-right: 0; /* Remove margin for small screens */
     }
 
     .schedu-image {
-        max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
-        margin-top: 20px; /* Dodanie marginesu górnego między zawartością a obrazem */
+        max-width: 100%; /* Ensure image doesn't exceed container width */
+        margin-top: 20px; /* Add top margin between content and image */
     }
 
     .calendar-image {
-        max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
-        margin-top: 10px; /* Dodanie marginesu górnego między zawartością a obrazem */
+        max-width: 100%; /* Ensure image doesn't exceed container width */
+        margin-top: 10px; /* Add top margin between content and image */
     }
 }
 
@@ -331,29 +321,29 @@ ul li {
     }
 
     .container {
-        flex-direction: column; /* Ustawienie elementów w kolumnie dla małych ekranów */
-        align-items: center; /* Wyśrodkowanie elementów */
+        flex-direction: column; /* Arrange items in a column for small screens */
+        align-items: center; /* Center items */
     }
 
     .content {
-        margin-right: 0; /* Usunięcie marginesu dla małych ekranów */
+        margin-right: 0; /* Remove margin for small screens */
     }
 
     .schedu-image {
-        max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
-        margin-top: 20px; /* Dodanie marginesu górnego między zawartością a obrazem */
+        max-width: 100%; /* Ensure image doesn't exceed container width */
+        margin-top: 20px; /* Add top margin between content and image */
     }
 
     .calendar-image {
-        max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
-        margin-top: 10px; /* Dodanie marginesu górnego między zawartością a obrazem */
+        max-width: 100%; /* Ensure image doesn't exceed container width */
+        margin-top: 10px; /* Add top margin between content and image */
     }
 }
 
 @media (max-width: 480px) {
     nav {
-        flex-direction: column; /* Nawigacja w kolumnie dla najmniejszych ekranów */
-        align-items: flex-start; /* Wyrównanie elementów do lewej */
+        flex-direction: column; /* Navigation in a column for the smallest screens */
+        align-items: flex-start; /* Align items to the left */
     }
 
     nav a {
@@ -369,22 +359,22 @@ ul li {
     }
 
     .container {
-        padding: 1em; /* Zmniejszenie paddingu dla bardzo małych ekranów */
-        flex-direction: column; /* Ustawienie elementów w kolumnie */
-        align-items: center; /* Wyśrodkowanie elementów */
+        padding: 1em; /* Reduce padding for very small screens */
+        flex-direction: column; /* Arrange items in a column */
+        align-items: center; /* Center items */
     }
 
     .content {
-        margin-right: 0; /* Usunięcie marginesu dla małych ekranów */
+        margin-right: 0; /* Remove margin for small screens */
     }
 
     .schedu-image {
-        max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
-        margin-top: 10px; /* Dodanie marginesu górnego między zawartością a obrazem */
+        max-width: 100%; /* Ensure image doesn't exceed container width */
+        margin-top: 10px; /* Add top margin between content and image */
     }
 
     .calendar-image {
-        max-width: 100%; /* Upewnienie się, że obraz nie przekroczy szerokości kontenera */
-        margin-top: 10px; /* Dodanie marginesu górnego między zawartością a obrazem */
+        max-width: 100%; /* Ensure image doesn't exceed container width */
+        margin-top: 10px; /* Add top margin between content and image */
     }
 }

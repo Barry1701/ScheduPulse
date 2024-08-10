@@ -4,13 +4,16 @@ from django.contrib.auth.decorators import login_required
 from .models import Meeting, Room
 from .forms import MeetingForm
 
+# View for displaying meeting details
 def detail(request, id):
     meeting = get_object_or_404(Meeting, pk=id)
     return render(request, "meetings/detail.html", {"meeting": meeting})
 
+# View for listing all rooms
 def rooms_list(request):
     return render(request, "meetings/rooms_list.html", {"rooms": Room.objects.all()})
-
+    
+# View for listing all meetings
 def meetings_list(request):
     meetings = Meeting.objects.all()
     return render(request, "meetings/meetings.html", {"meetings": meetings})

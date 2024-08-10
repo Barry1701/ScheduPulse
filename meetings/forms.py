@@ -15,6 +15,7 @@ class MeetingForm(ModelForm):
             'start_time': TimeInput(attrs={"type": "time"}),
             'duration': TextInput(attrs={"type": "number", "min": "1", "max": "24"}),
         }
+    # Ensure the meeting date is not in the past
 
     def clean_date(self):
         d = self.cleaned_data.get("date")

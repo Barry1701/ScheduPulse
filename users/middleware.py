@@ -5,6 +5,7 @@ class EnsureProfileMiddleware:
         self.get_response = get_response
 
     def __call__(self, request):
+        # Ensure each authenticated user has a profile
         if request.user.is_authenticated and not hasattr(request.user, 'profile'):
             Profile.objects.get_or_create(request.user)
         response = self.get_response(request)

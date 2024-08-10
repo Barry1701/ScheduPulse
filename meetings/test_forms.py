@@ -9,13 +9,13 @@ class TestMeetingForm(TestCase):
         self.room = Room.objects.create(name="Room 1", floor=1, room_number=101)
 
     def test_form_is_valid(self):
-        future_date = date.today() + timedelta(days=1)  # Używamy daty przyszłej
+        future_date = date.today() + timedelta(days=1)  # we are using future date
         form = MeetingForm({
             'title': 'Test Meeting',
             'date': future_date,
             'start_time': time(9, 0),
             'duration': 2,
-            'room': self.room.id  # używamy identyfikatora pokoju
+            'room': self.room.id  # we are using room id
         })
         self.assertTrue(form.is_valid(), msg="Form is invalid")
 

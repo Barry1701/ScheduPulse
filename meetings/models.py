@@ -30,7 +30,8 @@ class Meeting(models.Model):
         start_datetime = datetime.combine(self.date, self.start_time)
         end_datetime = start_datetime + timedelta(hours=self.duration)
         return end_datetime.time()
-
+    
+    # Custom validation for the Meeting model
     def clean(self):
         super().clean()
 
