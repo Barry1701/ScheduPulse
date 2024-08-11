@@ -177,39 +177,55 @@ Django signals are used to automate the creation and updating of user profiles. 
 
 ## Testing
 
-### Manual Testing
+Testing is a crucial part of ensuring that the ScheduPulse application functions correctly and reliably. Various forms of testing were conducted to validate the application's features and logic.
 
+#### Unit Tests
+
+We have implemented unit tests for both forms and views in the application to ensure that the core functionality is working as expected.
+
+- **Form Tests**: We created tests to validate the `MeetingForm` to ensure that the form accepts valid data and correctly rejects invalid data. The following tests were added:
+  - `test_form_is_valid`: This test checks if the form is valid when all required fields are filled with appropriate data.
+  - `test_form_is_invalid`: This test checks if the form is invalid when required fields are left empty or contain incorrect data.
+
+- **View Tests**: We implemented tests to verify that the views for creating and editing meetings function correctly. The following tests were added:
+  - `test_meeting_create_view`: This test ensures that a user can successfully create a new meeting and that the form submission redirects correctly.
+  - `test_meeting_edit_view`: This test verifies that a user can successfully edit an existing meeting and that the updated meeting data is processed and saved correctly.
+
+These tests help catch potential bugs and ensure that changes to the codebase do not break existing functionality.
+
+You can run these tests by using the following command:
+
+
+python3 manage.py test
+
+This command will execute all the tests in the project and provide feedback on their success or failure.
+
+## Manual Testing
 Extensive manual testing was conducted to ensure that all features work as expected. This includes testing all forms, validation logic, user authentication, and meeting management functionality.
 
-### Code Validation
+## Code Validation
+All HTML, CSS, and JavaScript code was validated using appropriate tools such as W3C Validator and JSHint. Python code was manually reviewed for adherence to PEP8 guidelines.
 
-All HTML, CSS, and JavaScript code was validated using appropriate tools such as W3C Validator and JSHint.  Python code was manually reviewed for adherence to PEP8 guidelines.
-
-### Performance Testing
-
+## Performance Testing
 Performance testing was conducted using Google Lighthouse to ensure that the application performs optimally across various devices. The results show a high performance score, indicating efficient loading times and responsiveness.
 
 ![Performance Testing with Lighthouse](documentation/lighthouse_performance.png)
 
 ## Bugs
-
 - **Issue**: Overlapping meetings were allowed in the same room.
-- **Fix**: Added additional validation logic in the Meeting model to check for overlapping times and rooms before saving a new meeting.
+  - **Fix**: Added additional validation logic in the Meeting model to check for overlapping times and rooms before saving a new meeting.
 
 - **Issue**: Static files (e.g., CSS, JavaScript) were not loading correctly in the production environment.
--  **Fix**: Configured the STATICFILES_DIRS and used Whitenoise to serve static files correctly in the Heroku deployment.
-
+  - **Fix**: Configured the STATICFILES_DIRS and used Whitenoise to serve static files correctly in the Heroku deployment.
 
 ## Deployment
 
 ### Deploying to Heroku
-
 1. **Create a GitHub Repository**: Use the Code Institute GitPod template to create a new repository.
 2. **Create an App on Heroku**: Link the GitHub repository to a new Heroku app and configure environment variables.
 3. **Deploy the Application**: Manually deploy the application from the Heroku dashboard.
 
 ### Fork and Clone
-
 To fork this repository, visit the GitHub page and click "Fork". To clone, use the following command:
 
 ```bash
